@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    font-family: 'Inter', sans-serif;
+    --page-background: #222;
+    --flag-width: 300px;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 32px 16px;
+    background: var(--page-background);
+    color: white;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.flag {
+    width: var(--flag-width);
+    aspect-ratio: 4/3;
+    background: gainsboro;
+    position: relative;
+}
+
+.flag::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(120deg, rgba(240, 240, 240, 0.271), rgba(92, 13, 13, 0.162));
+}
+
+.flag_title {
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.flag flag--italy{
+    position: relative;
+}
+.green{
+    width: calc(300px/3);
+    height: 100%;
+    background-color: green;
+}
+.white{
+    position: absolute;
+    left: 100px;
+    width: calc(300px/3);
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.red{
+    position: absolute;
+    left: 200px;
+    width: calc(300px/3);
+    height: 100%;
+    background-color: rgb(255, 0, 0);
+}
+/* ucrania */
+
+.flag flag--ukraine{
+    position: relative;
+}
+.ukrain-yellow{
+    background-color: yellow;
+    width: 100%;
+    height:100px;
+}
+.ukrain-blue{
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    background-color: blue;
+    width: 100%;
+    height: 125px;
+}
+/*kuwait  */
+.flag flag--kuwait{
+    position: relative;
+}
+.kuwait-green{   
+    background-color: darkgreen;
+    height: 75px;
+    width: 100%;
+}
+.kuwait-white{
+    background-color: white;
+    height: 75px;
+    width: 100%;
+}
+.kuwait-red{ 
+    background-color: red;
+    height: 75px;
+    width: 100%;
+}
+.kuwait-black{
+    position: absolute;
+    bottom: 0px;
+    width: 100px;
+    height: 225px;
+    background-color: black;
+    z-index: 1;
+    clip-path: polygon(0 0, 134px 100px, 122px 133px, 0% 100%);
+}
+/* bangladesh */
+.flag flag--bangladesh{
+    position: relative;
+}
+.bangladesh-green{
+    background-color: darkgreen;
+    width: 100%;
+    height: 100%;
+
+}
+.bangladesh-red{
+    position: absolute;
+    top: 35px;
+    left: 71px;
+    background-color: darkred;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* portugal */
+
+.flag flag--portugal{
+    position: relative;
+}
+.portugal-green{
+    width: 100px;
+    height: 100%;
+    background-color: darkgreen;
+}
+.portugal-red{
+    position: absolute;
+    width: 200px;
+    height: 100%;
+    left: 100px;
+    bottom: 0px;
+    background-color: red;
+}
+.portugal-yellow{
+    width: 90px;
+    height: 90px;
+    left: 53px;
+    bottom: 70px;
+    position: absolute;
+    background-color: yellow;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* japan */
+    
+.flag flag--japan{
+    position: relative;
+}
+.white-japan{
+    width: 300px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.ball-red{
+    position: absolute;
+    top: 40px;
+    left: 75px;
+    background-color: red;
+    width: 150px;
+    height: 150px;
+    z-index: 1;
+    border-radius: 50%;
+}
+/* greece */
+.flag flag--greece{
+    position: relative;
+}
+
+
+.greece-white{
+    width:300px;
+    height: 25px;
+    background-color: rgb(255, 255, 255);
+}
+
+.greece-blue{
+    width:300px;
+    height: 25px;
+    background-color: rgb(0, 0, 255);
+}
+.greece-cross{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 125px;
+    height: 125px;
+    background-color: rgb(0, 0, 255);
+    z-index: 1;
+}
+.greece-line-height{
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    width: 125px;
+    height: 25px;
+    background-color: rgb(255, 255, 255);
+    z-index: 2;
+}
+.greece-line-width{
+    position: absolute;
+    top: 0px;
+    left: 43px;
+    width: 25px;
+    height: 125px;
+    background-color: rgb(255, 255, 255);
+    z-index: 3;
+}

@@ -1,0 +1,28 @@
+// font-family: Arial, Helvetica, sans-serif;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+  width: 800px;
+}
+h3 {
+  width: 800px;
+}
+p {
+  width: 800px;
+}
+.time {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+.text-footer {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+}

@@ -1,0 +1,19 @@
+body{
+    margin:0px;
+    padding: 0px;
+    justify-content: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 500px;
+}
+.top-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+}
