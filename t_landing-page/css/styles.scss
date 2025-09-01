@@ -1,0 +1,17 @@
+@import "colors";
+@import "reset";
+@import "typography";
+@import "mixins";
+@import "navbar";
+@import "dropdown";
+@import "splashscreen";
+@import "buttons";
+@import "how_to";
+@import "solutions";
+@import "articles";
+@import "advertising";
+@import "footer";
+html,
+body {
+  font-family: "Inter", sans-serif;
+}

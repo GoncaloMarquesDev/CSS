@@ -1,0 +1,39 @@
+.navbar {
+  @include flex(space-between, center, row);
+  margin: 0px;
+  padding: 10px 20px;
+  position: relative;
+  background: transparent; // começa transparente
+  
+
+  .logo {
+    display: flex;
+    padding-right: 50px;
+    align-items: center;
+  }
+
+  .nav_left_side {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+  }
+}
+
+.navbar.nav-fixed {
+  @include flex(space-between, center, row);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; // ocupa a largura total
+  margin: 0;   // tira a margem para não "empurrar"
+  padding: 10px 20px;
+  background: white; // muda o fundo
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15); 
+  z-index: 10000;
+}

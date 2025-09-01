@@ -1,0 +1,26 @@
+.splashscreen_container {
+  container-type: inline-size;
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+
+
+.splash_title{
+
+  max-width: 600px;
+}
+.splash_subtitle{
+
+  max-width: 700px;
+}
+.video_container_splash{
+  position: relative;
+}
+
+
+

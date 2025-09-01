@@ -1,0 +1,71 @@
+.btn:hover {
+  background-color: #000000;
+  color: white;
+}
+.splashs_btn_container {
+  display: flex;
+  justify-content: center; /* centra horizontalmente */
+  gap: 10px; /* espaço entre os botões */
+  margin: 20px 0;
+  @container (max-width: 400px) {
+    flex-direction: column;
+  }
+}
+
+.btn_splash_set {
+  padding: 5px 14px;
+  text-decoration: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 2px;
+  text-align: center;
+}
+.btn_splash_learn {
+  padding: 5px 14px;
+  text-decoration: none;
+  background-color: #000000;
+  color: white;
+  border-radius: 2px;
+  text-align: center;
+}
+.btn_splash_set:hover {
+  background-color: #fafafa;
+}
+.btn_watch_more {
+  position: absolute;
+  left: 170px;
+  top: 235px;
+  border-radius: 20px;
+  z-index: 9999;
+}
+.articles_btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px; /* aqui já vai funcionar */
+  padding: 0 15px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 1px 1px 3px black;
+  font-size: 12px;
+}
+.articles_btn:hover {
+  background-color: #007bff;
+  color: white;
+}
+.active {
+  background-color: #007bff;
+  color: white;
+}
+.advertising_btn {
+  display: flex;             
+  align-items: center;       
+  justify-content: center;
+  width: 100px;
+  height: 40px;
+  background-color: white;
+  color: #007bff;
+  border-radius: 3px;
+  font-size: 13px;
+  text-align: center;
+}

@@ -1,0 +1,20 @@
+.advertising {
+  margin: 50px auto;      /* centra horizontalmente */
+  max-width: 1000px;       /* largura máxima */
+            /* ocupa toda a largura até 800px */
+}
+
+.advertising_container {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 130px;
+  background-color: #007bff;
+  border-radius: 5px;
+}
+
+.advertising_container h4 {
+  color: white;
+}

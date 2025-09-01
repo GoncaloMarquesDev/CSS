@@ -1,0 +1,32 @@
+.how_to_container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(247, 248, 249);
+  margin-top: 80px;
+  height: 400px;
+}
+.how_to_title {
+  margin-top: 25px;
+}
+.how_to_text {
+  max-width: 800px;
+}
+.image_hero {
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+  position: absolute;
+  z-index: 9998;
+  top: 150px;
+}
+.vertical-hr {
+  position: absolute;
+  top: -30px;
+  width: 2px; /* espessura da linha */
+  height: 50px; /* altura da linha */
+  background-color: #eeeeee; /* cor da linha */
+  margin: 0 20px; /* espaço lateral */
+  z-index: 9999;
+}
