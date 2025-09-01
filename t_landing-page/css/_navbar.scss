@@ -1,39 +1,80 @@
 .navbar {
-  @include flex(space-between, center, row);
-  margin: 0px;
+  display: flex;
+  justify-content: space-between;
   padding: 10px 20px;
   position: relative;
-  background: transparent; // começa transparente
-  
+  background: transparent;
+  margin: 0;
+}
 
-  .logo {
-    display: flex;
-    padding-right: 50px;
-    align-items: center;
-  }
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  padding-right: 50px;
+}
 
-  .nav_left_side {
-    display: flex;
-    flex-direction: row;
-  }
+.nav_left_side {
+  display: flex;
+  align-items: center;
+}
 
-  .menu {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    align-items: center;
-  }
+.menu {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  list-style: none;
 }
 
 .navbar.nav-fixed {
-  @include flex(space-between, center, row);
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%; // ocupa a largura total
-  margin: 0;   // tira a margem para não "empurrar"
-  padding: 10px 20px;
-  background: white; // muda o fundo
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15); 
+  width: 100%;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   z-index: 10000;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  .menu right-menu {
+    display: flex;
+  }
+
+  .main-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: white;
+    padding: 15px;
+  }
+
+  .main-menu.active {
+    display: flex;
+    align-items: flex-start;
+    font-size: 10px;
+    margin-left: 125px;
+  }
+
+  .nav_left_side {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .right-menu {
+    display: flex;
+    gap: 10px;
+  }
 }

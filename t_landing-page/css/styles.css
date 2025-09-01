@@ -230,52 +230,85 @@ small, .text_small {
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  margin: 0px;
   padding: 10px 20px;
   position: relative;
   background: transparent;
+  margin: 0;
 }
+
 .navbar .logo {
   display: flex;
-  padding-right: 50px;
   align-items: center;
+  padding-right: 50px;
 }
-.navbar .nav_left_side {
+
+.nav_left_side {
   display: flex;
-  flex-direction: row;
-}
-.navbar .menu {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
   align-items: center;
 }
 
-.navbar.nav-fixed {
+.menu {
   display: flex;
-  justify-content: space-between;
+  gap: 10px;
   align-items: center;
-  flex-direction: row;
+  list-style: none;
+}
+
+.navbar.nav-fixed {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  margin: 0;
-  padding: 10px 20px;
   background: white;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   z-index: 10000;
 }
 
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  .menu right-menu {
+    display: flex;
+  }
+  .main-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: white;
+    padding: 15px;
+  }
+  .main-menu.active {
+    display: flex;
+    align-items: flex-start;
+    font-size: 10px;
+    margin-left: 125px;
+  }
+  .nav_left_side {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .right-menu {
+    display: flex;
+    gap: 10px;
+  }
+}
 .dropdown {
   position: relative;
   display: inline-block;
 }
 
 .dropdown__trigger {
-  padding: 10px 14px;
   border: none;
   border-radius: 10px;
   background: #fff;
@@ -407,7 +440,7 @@ small, .text_small {
   color: white;
 }
 
-.active {
+.btn_active {
   background-color: #007bff;
   color: white;
 }
@@ -434,7 +467,7 @@ small, .text_small {
   text-align: center;
   background-color: rgb(247, 248, 249);
   margin-top: 80px;
-  height: 400px;
+  height: 200px;
 }
 
 .how_to_title {
@@ -450,6 +483,7 @@ small, .text_small {
   position: absolute;
   z-index: 9998;
   top: 150px;
+  max-width: 500px;
 }
 
 .vertical-hr {
@@ -462,9 +496,26 @@ small, .text_small {
   z-index: 9999;
 }
 
+@media (max-width: 768px) {
+  .image_hero {
+    height: 50vh;
+  }
+  .how_to_container {
+    height: 200px;
+  }
+}
+/* Para telemóveis */
+@media (max-width: 480px) {
+  .image_hero {
+    height: 30vh;
+  }
+  .how_to_container {
+    height: 100px;
+  }
+}
 .solutions_container {
   position: relative;
-  margin-top: 80px;
+  margin-top: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -597,7 +648,7 @@ small, .text_small {
 .article_item {
   width: 20px;
   height: 20px;
-  background-color: rgb(156, 156, 156);
+  background-color: rgb(218, 216, 216);
   border-radius: 20px;
   color: rgb(82, 82, 82);
   font-size: 10px;
@@ -605,6 +656,7 @@ small, .text_small {
   justify-content: center; /* centra na horizontal */
   align-items: center; /* centra na vertical */
   text-align: center;
+  font-weight: 400;
 }
 
 @media (max-width: 1000px) {
@@ -676,6 +728,12 @@ hr {
 
 .footer_subscribe {
   grid-area: subscribe;
+}
+
+.footer h6 {
+  font-size: 14px; /* maior */
+  font-weight: bold; /* mais grosso */
+  margin-bottom: 15px; /* espaço entre título e links */
 }
 
 @media (max-width: 700px) {

@@ -11,7 +11,14 @@ window.addEventListener('scroll', function() {
  const video = document.getElementById("myVideo");
   const btn = document.getElementById("play");
   btn.addEventListener("click", (event) => {
-    event.preventDefault(); // evita que o <a> recarregue a página
-  video.play(); // inicia o vídeo
+    event.preventDefault(); 
+  video.play(); 
  
   });
+
+const hamburger = document.querySelector('.hamburger');
+const mainMenu = document.querySelector('.main-menu');
+
+hamburger.addEventListener('click', () => {
+  mainMenu.classList.toggle('active');
+});

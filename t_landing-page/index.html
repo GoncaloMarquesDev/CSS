@@ -8,38 +8,38 @@
     <script src="./js/main.js" defer></script>
   </head>
   <body>
-    <nav class="navbar">
-      <div class="nav_left_side">
-        <div class="logo">
-          <img src="./assets/logo.webp" alt="logo" width="90px" />
-        </div>
+   <nav class="navbar">
+  <div class="nav_left_side">
+    <div class="logo">
+      <img src="./assets/logo.webp" alt="logo" width="90px" />
+    </div>
 
-        <ul class="menu">
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Tutorials</a></li>
-          <li class="dropdown">
-            <a
-              class="dropdown__trigger"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Blog
-            </a>
-            <ul class="dropdown__menu" role="menu">
-              <li role="menuitem"><a href="#">Perfil</a></li>
-              <li role="menuitem"><a href="#">Definições</a></li>
-            </ul>
-          </li>
+    <button class="hamburger" aria-label="open menu">☰</button>
+
+   
+    <ul class="menu main-menu">
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Tutorials</a></li>
+      <li class="dropdown">
+        <a class="dropdown__trigger" aria-haspopup="true" aria-expanded="false">Blog</a>
+        <ul class="dropdown__menu" role="menu">
+          <li role="menuitem"><a href="#">Perfil</a></li>
+          <li role="menuitem"><a href="#">Definições</a></li>
         </ul>
-      </div>
-      <div>
-        <ul class="menu">
-          <li><a href="/#">Sign In</a></li>
-          <li class="btn">Sign Up</li>
-        </ul>
-      </div>
-    </nav>
+      </li>
+    </ul>
+  </div>
+
+  
+  <div class="nav_right_side">
+    <ul class="menu right-menu">
+      <li><a href="#">Sign In</a></li>
+      <li class="btn">Sign Up</li>
+    </ul>
+  </div>
+</nav>
+
 
     <section class="splashscreen_container">
       <h1 class="splash_title"><b>Make your website wonderful</b></h1>
@@ -71,7 +71,7 @@
         class="image_hero"
         src="./assets/hero-image.png"
         alt="hero-image"
-        width="500px"
+        
       />
     </section>
 
@@ -215,7 +215,7 @@
     <footer class="footer_wrapper">
       <div class="footer">
 <div class="footer_products">
-        <h6>Products</h4>
+        <h6>Products</h6>
         <ul>
           <li>Web Studio</li>
           <li>DynamicBox Flex</li>
@@ -225,7 +225,7 @@
         </ul>
       </div>
         <div class="footer_resources">
-        <h7>Resources</h4>
+        <h6>Resources</h6>
         <ul>
           <li><a href="#">Web Studio</a></li>
           <li>DynamicBox Flex</li>
@@ -235,7 +235,7 @@
         </ul>
       </div>
           <div class="footer_subscribe">
-        <h6>Subscribe</h4>
+        <h6>Subscribe</h6>
       <p>Get the latest news and articles to your inbox every month.</p>
       </div>
       </div>

@@ -24,6 +24,11 @@ hr {
 .footer_subscribe {
   grid-area: subscribe;
 }
+.footer h6 {
+  font-size: 14px; /* maior */
+  font-weight: bold; /* mais grosso */
+  margin-bottom: 15px; /* espaço entre título e links */
+}
 @media (max-width: 700px) {
   .footer {
     grid-template-areas:
@@ -33,3 +38,4 @@ hr {
     grid-template-columns: 1fr;
   }
 }
+

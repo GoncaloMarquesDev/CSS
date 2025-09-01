@@ -7,7 +7,7 @@
   text-align: center;
   background-color: rgb(247, 248, 249);
   margin-top: 80px;
-  height: 400px;
+  height: 200px;
 }
 .how_to_title {
   margin-top: 25px;
@@ -20,6 +20,8 @@
   position: absolute;
   z-index: 9998;
   top: 150px;
+  max-width: 500px;
+  
 }
 .vertical-hr {
   position: absolute;
@@ -29,4 +31,22 @@
   background-color: #eeeeee; /* cor da linha */
   margin: 0 20px; /* espaço lateral */
   z-index: 9999;
+}
+@media (max-width: 768px) {
+  .image_hero {
+    height: 50vh;
+  }
+  .how_to_container {
+      height: 200px;
+    }
+}
+
+/* Para telemóveis */
+@media (max-width: 480px) {
+  .image_hero {
+    height: 30vh;
+  }
+  .how_to_container {
+      height: 100px;
+    }
 }
